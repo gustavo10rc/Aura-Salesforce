@@ -1,0 +1,31 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+	<lightning:card title="Inserir Novo contato">
+    <lightning:recordEditForm aura:id="recordEditForm"
+                           objectApiName="Contact"
+        					onsuccess="{!c.handleSuccess}">
+        <!--onsucess="{!c.handleSucess} Só serve para inputar informações e mostrar as alterações quanso o botao é clicado
+        objectApiName="Contact" Chama o objeto de sua escolha-->
+		<lightning:messages />
+        
+        <div class="slds-grid slds-gutters">
+  			<div class="slds-col">
+    			<lightning:inputField fieldName="Name" />
+        		<lightning:inputField fieldName="Phone" />
+                <lightning:inputField fieldName="Title" />
+                <lightning:inputField fieldName="Department" />
+  			</div>
+  			<div class="slds-col">
+   				<!-- campos para acrscentar durante nosso preenchimento do formulário -->
+          		
+                <lightning:inputField fieldName="Birthdate" />
+                <lightning:inputField fieldName="LeadSource" />
+                <lightning:inputField fieldName="MobilePhone" />
+                <lightning:inputField fieldName="Email" />
+                
+       			<lightning:button class="slds-m-top_small" type="submit" label="Criar" />
+ 		 	</div>
+		</div>
+       
+    </lightning:recordEditForm>
+    </lightning:card>
+</aura:component>
