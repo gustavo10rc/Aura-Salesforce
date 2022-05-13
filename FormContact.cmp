@@ -9,10 +9,10 @@
         
         <div class="slds-grid slds-gutters">
   			<div class="slds-col">
-    			<lightning:inputField fieldName="Name" />
-        		<lightning:inputField fieldName="Phone" />
-                <lightning:inputField fieldName="Title" />
-                <lightning:inputField fieldName="Department" />
+    				<lightning:inputField fieldName="Name" />
+        			<lightning:inputField fieldName="Phone" />
+                		<lightning:inputField fieldName="Title" />
+                		<lightning:inputField fieldName="Department" />
   			</div>
   			<div class="slds-col">
    				<!-- campos para acrscentar durante nosso preenchimento do formulário -->
